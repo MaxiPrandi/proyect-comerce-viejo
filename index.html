@@ -13,23 +13,23 @@
 <header>
     <section class="container ">
         <nav class="navbar navbar-expand-lg bg-primary ">
-            <div class="container-fluid">
+            <div class="container  ">
               <a class="navbar-brand" href="#">
                 <img src="./img/logo.jpg" alt="" width="200px" height="150px">
               </a>
-              <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler bg-warning " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon bg-warning"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ms-3 me-auto mb-2 mb-lg-0 ">
                   <li class="nav-item">
                     <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-light" href="#">Contacto</a>
+                    <a class="nav-link text-light ms-3" href="#">Contacto</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-light ms-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Carrito de compras
                     </a>
                     <ul class="dropdown-menu">
@@ -91,88 +91,92 @@
                     <h3>Guitar 1</h3>
                     <img src="./img/guitar1.jpg" alt="guitar1">
                     <h3>$ 25000</h3>
+                    <button type="button" class="btn btn-success mb-4 btn-outline-dark fw-bold">Agregar +</button>
                 </div>
                 <div class="col-sm-6 col-md-3 bg-secondary border border-dark rounded-4">
                     <h3>Guitar 2</h3>
                     <img src="./img/guitar2.jpg" alt="guitar2">
                     <h3>$ 16500</h3>
+                    <button type="button" class="btn btn-success mb-4 btn-outline-dark fw-bold">Agregar +</button>
+
                 </div>
                 <div class="col-sm-6 col-md-3 bg-secondary border border-dark rounded-4">
                     <h3>Guitar 3</h3>
                     <img src="./img/guitar33.jpg" alt="guitar3">
                     <h3>$ 15000</h3>
+                    <button type="button" class="btn btn-success mb-4 btn-outline-dark fw-bold">Agregar +</button>
+
                 </div>
                 <div class="col-sm-6 col-md-3 bg-warning border border-dark rounded-4">
                     <h4 class="mt-2 mb-4">Publicidad</h4>
-                    <img class="img-fluid " src="./img/2media.gif" alt="" >
+                    <img class="img " src="./img/2media.gif" alt="" width="90%" height="80%">
                 </div>
             </div>
         </div>
 
 
+ <!-- Footer -->
+ <footer class="text-center text-white" style="background-color: #0a4275;">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+        <!-- Section: CTA -->
+        <section class="">
+            <p class="d-flex justify-content-center align-items-center">
+                <span class="me-3">Registrate aqui!</span>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Crear Usuario
+                </button>
 
+                <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-dark" id="exampleModalLabel">Registro usuario nuevo</h5>
 
-    </section>
-
-    <section class="">
-        <!-- Footer -->
-        <footer class="text-center text-white" style="background-color: #0a4275;">
-            <!-- Grid container -->
-            <div class="container p-4 pb-0">
-                <!-- Section: CTA -->
-                <section class="">
-                    <p class="d-flex justify-content-center align-items-center">
-                        <span class="me-3">Registrate aqui!</span>
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
-                            Crear Usuario
-                        </button>
-
-                        <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title text-dark" id="exampleModalLabel">Registro usuario nuevo</h5>
-
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="input-group mb-3 ">
-                                        <input type="text" class="form-control" placeholder="Nombre "
-                                            aria-label="Username">
-                                        <span class="input-group-text">@</span>
-                                        <input type="text" class="form-control" placeholder="Email" aria-label="Email">
-                                    </div>
-                                </div>
-
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Cerrar</button>
-                                    <button type="button" class="btn btn-primary">Crear Usuario</button>
-                                </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="input-group mb-3 ">
+                                <input type="text" class="form-control" placeholder="Nombre "
+                                    aria-label="Username">
+                                <span class="input-group-text">@</span>
+                                <input type="text" class="form-control" placeholder="Email" aria-label="Email">
                             </div>
                         </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"
+                                data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Crear Usuario</button>
+                        </div>
                     </div>
-                    </p>
-                </section>
-                <!-- Section: CTA -->
+                </div>
             </div>
-            <!-- Grid container -->
+            </p>
+        </section>
+        <!-- Section: CTA -->
+    </div>
+    <!-- Grid container -->
 
-            <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                © 2020 Copyright:
-                <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-            </div>
-            <!-- Copyright -->
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
 
-        </footer>
-        <!-- Footer -->
+</footer>
+<!-- Footer -->
+
     </section>
+  
+       
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
