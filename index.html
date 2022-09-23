@@ -7,14 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boostrap Tienda</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="custom.css">
 </head>
 
 <body>
 <header>
-    <section class="container ">
-        <nav class="navbar navbar-expand-lg bg-primary ">
+    <section class="container">
+       
+        <nav class="navbar navbar-expand-lg bg-primary bg-opacity-75 mb-3 ">
             <div class="container  ">
-              <a class="navbar-brand" href="#">
+              <a class="navbar-brand" href="index.html">
                 <img src="./img/logo.jpg" alt="" width="200px" height="150px">
               </a>
               <button class="navbar-toggler bg-warning " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,32 +25,32 @@
               <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav ms-3 me-auto mb-2 mb-lg-0 ">
                   <li class="nav-item">
-                    <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active text-light fs-4" aria-current="page" href="#">Login</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-light ms-3" href="#">Contacto</a>
+                    <a class="nav-link text-light ms-3 fs-4" href="">Registro</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-light ms-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-light ms-3 fs-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Carrito de compras
                     </a>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="#">Envio</a></li>
                       <li><a class="dropdown-item" href="#">Metodo de pago</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Devolucion</a></li>
+                      <li><a class="dropdown-item" href="#">Vaciar carrito</a></li>
                     </ul>
                   </li>
                  
                 </ul>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2 border border-dark" type="search" placeholder="Buscar Producto" aria-label="Search">
-                  <button class="btn btn-outline-dark bg-warning fs-5 fw-bold" type="submit">BUSCAR</button>
+                  <button class="btn btn-outline-dark bg-warning fs-6 fw-bold" type="submit">BUSCAR</button>
                 </form>
               </div>
             </div>
           </nav>
-
+        
     </section>
 
 
@@ -58,7 +60,7 @@
     <section class="container">
         <div class="container text-center">
             <div class="row">
-                <div class="col-12 bg-danger bg-dark border border-dark rounded-4">
+                <div class="col-12 bg-danger bg-dark border border-dark rounded-4 mb-3">
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -86,28 +88,29 @@
                 </div>
             </div>
 
-            <div class="row text-light  ">
-                <div class="col -sm-6 col-md-3 bg-warning border border-dark rounded-4 ">
+            <div class="row text-dark fw-bold  ">
+               
+                <div class="col -sm-6 col-md-3 bg-warning bg-opacity-75 border border-dark rounded-4 ">
                     <h3>Guitar 1</h3>
                     <img src="./img/guitar1.jpg" alt="guitar1">
-                    <h3>$ 25000</h3>
+                    <h4>$ 14.500</h4>
                     <button type="button" class="btn btn-success mb-4 btn-outline-dark fw-bold">Agregar +</button>
                 </div>
-                <div class="col-sm-6 col-md-3 bg-secondary border border-dark rounded-4">
+                <div class="col-sm-6 col-md-3 bg-secondary bg-opacity-75 border border-dark rounded-4">
                     <h3>Guitar 2</h3>
-                    <img src="./img/guitar2.jpg" alt="guitar2">
-                    <h3>$ 16500</h3>
+                    <img src="./img/guitar2.jpg" alt="guitar2" >
+                    <h4>$ 17.500</h4>
                     <button type="button" class="btn btn-success mb-4 btn-outline-dark fw-bold">Agregar +</button>
 
                 </div>
-                <div class="col-sm-6 col-md-3 bg-secondary border border-dark rounded-4">
+                <div class="col-sm-6 col-md-3 bg-secondary bg-opacity-75 border border-dark rounded-4">
                     <h3>Guitar 3</h3>
                     <img src="./img/guitar33.jpg" alt="guitar3">
-                    <h3>$ 15000</h3>
+                    <h4>$ 22.000</h4>
                     <button type="button" class="btn btn-success mb-4 btn-outline-dark fw-bold">Agregar +</button>
 
                 </div>
-                <div class="col-sm-6 col-md-3 bg-warning border border-dark rounded-4">
+                <div class="col-sm-6 col-md-3 bg-warning bg-opacity-75 border border-dark rounded-4">
                     <h4 class="mt-2 mb-4">Publicidad</h4>
                     <img class="img " src="./img/2media.gif" alt="" width="90%" height="80%">
                 </div>
@@ -116,17 +119,17 @@
 
 
  <!-- Footer -->
- <footer class="text-center text-white" style="background-color: #0a4275;">
+ <footer class="text-center text-white mt-3" style="background-color: #0a4275; ">
     <!-- Grid container -->
     <div class="container p-4 pb-0">
         <!-- Section: CTA -->
         <section class="">
             <p class="d-flex justify-content-center align-items-center">
-                <span class="me-3">Registrate aqui!</span>
+                <span class="me-3">Recibir nuestras promociones</span>
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                     data-bs-target="#exampleModal">
-                    Crear Usuario
+                    Quiero mi descuento!
                 </button>
 
                 <!-- Modal -->
@@ -135,7 +138,7 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title text-dark" id="exampleModalLabel">Registro usuario nuevo</h5>
+                            <h5 class="modal-title text-dark" id="exampleModalLabel">Recibir Ofertas</h5>
 
                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                 aria-label="Close"></button>
@@ -152,7 +155,7 @@
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary"
                                 data-bs-dismiss="modal">Cerrar</button>
-                            <button type="button" class="btn btn-primary">Crear Usuario</button>
+                            <button type="button" class="btn btn-primary">Enviar Email</button>
                         </div>
                     </div>
                 </div>
@@ -165,8 +168,12 @@
 
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2020 Copyright:
-        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+     
+        © 2022  Copyright: MAX PRANDI 
+        <div class="linkFooter" >
+                    <a class="text-white" href="index.html">Ir a Home</a>
+        </div>
+        
     </div>
     <!-- Copyright -->
 
