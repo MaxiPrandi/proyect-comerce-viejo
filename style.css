@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    list-style-type: none;
+
+}
+
+body {
+    padding: 5vh 3%;
+    background: rgb(190, 193, 236);
+   /* color grandiente
+    background: linear-gradient(180deg, rgba(190, 193, 236, 1) 0%, rgba(195, 113, 193, 1) 50%, rgba(236, 195, 235, 1) 95%);
+    */
+}
+
+/* navbar*/
+.navContainer {
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.logo h2 {
+    color: white;
+}
+
+
+.navbar ul li a {
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.tituloContainer h1 {
+
+    text-align: center;
+    margin-bottom: 7vh;
+    font-size: 3rem;
+
+}
+
+
+.formRegistro {
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+
+
+}
+
+.mainForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+}
+
+.mensaje {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+    font-size: 1.5rem;
+}
+
+.errorText {
+    color: #f00e25;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+.input {
+    padding: 10px 3px;
+    border: none;
+    border-bottom: 1px solid;
+
+}
+
+.submit {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: 1px solid white;
+}
+
+.submit:hover {
+    background-color: rgb(226, 40, 56);
+    border: 1px solid;
+    color: black;
+    transition: 1s all;
+}
+
+.mensaje p a {
+
+    font-weight: bold;
+    color: #161614;
+    font-size: 1.6rem;
+}
+
+@media (min-width: 576px) {
+    body{
+        background-color: blueviolet;
+    }
+    .navContainer{
+        flex-direction: row;
+    }
+    .navbar ul {
+        flex-direction: row;
+        gap: 10px;
+    }
+    .navbar ul li a {
+        padding: 5% 15%;
+    }
+
+}
+
+@media (min-width: 900px) {
+    body{
+        background-color: chocolate;
+    }
+
+    .logo {
+     
+        width: 40%;
+    }
+    .navbar{
+        width: 60%;
+              
+    }
+    .navbar ul {
+        justify-content: space-between;
+    }
+    
+}
